@@ -269,7 +269,7 @@ vB9R+0ofIey2nzvydZ1HCfgkSZIkSZIkSZIkpyn/X4ABAKSb8WbSHAOPAAAAAElFTkSuQmCC" transf
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M98,11h4c1.1,0,2,0.9,2,2v71c0,1.1-0.9,2-2,2h-4c-1.1,0-2-0.9-2-2
 	V13C96,11.9,96.9,11,98,11z"/>
-<rect x="95" y="35" fill-rule="evenodd" clip-rule="evenodd" fill="#ddd" width="10" height="10"/>
+<rect x="95" y="35" fill-rule="evenodd" clip-rule="evenodd" fill="transparent" width="10" height="10"/>
 <g>
 	
 		<image overflow="visible" opacity="0.85" width="100" height="338" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAFWCAYAAACfJzhGAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
@@ -519,7 +519,7 @@ w2z/X4ABAGZZUDQ67QojAAAAAElFTkSuQmCC" transform="matrix(0.24 0 0 0.24 89 9)">
 </g>
 <path fill-rule="evenodd" clip-rule="evenodd" fill="#000" d="M122,11h4c1.1,0,2,0.9,2,2v71c0,1.1-0.9,2-2,2h-4c-1.1,0-2-0.9-2-2
 	V13C120,11.9,120.9,11,122,11z"/>
-<rect x="119" y="51" fill-rule="evenodd" clip-rule="evenodd" fill="#ddd" width="10" height="10"/>
+<rect x="119" y="51" fill-rule="evenodd" clip-rule="evenodd" fill="transparent" width="10" height="10"/>
 <g>
 	
 		<image overflow="visible" opacity="0.85" width="100" height="338" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAFWCAYAAACfJzhGAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA
@@ -774,7 +774,7 @@ Pt4sIwEseo5fwhiJuF9a8UARcpKcKNRA0DhGosZBwm5nnPzWy5EGjPMN3x653yQ8sIS8FVFHQp8g
 		<rect x="71" y="51" fill-rule="evenodd" clip-rule="evenodd" fill="#ddd" width="10" height="9"/>
 	</g>
 	<g>
-		<rect x="71" y="52" fill-rule="evenodd" clip-rule="evenodd" fill="rgb(2, 168, 243)" width="10" height="9"/>
+		<rect x="71" y="52" fill-rule="evenodd" clip-rule="evenodd" fill="#fff" width="10" height="9"/>
 	</g>
 </g>
 <g>
@@ -782,7 +782,7 @@ Pt4sIwEseo5fwhiJuF9a8UARcpKcKNRA0DhGosZBwm5nnPzWy5EGjPMN3x653yQ8sIS8FVFHQp8g
 		<rect x="95" y="35" fill-rule="evenodd" clip-rule="evenodd" fill="#ddd" width="10" height="9"/>
 	</g>
 	<g>
-		<rect x="95" y="36" fill-rule="evenodd" clip-rule="evenodd" fill="rgb(2, 168, 243)" width="10" height="9"/>
+		<rect x="95" y="36" fill-rule="evenodd" clip-rule="evenodd" fill="#fff" width="10" height="9"/>
 	</g>
 </g>
 <g>
@@ -800,7 +800,7 @@ Pt4sIwEseo5fwhiJuF9a8UARcpKcKNRA0DhGosZBwm5nnPzWy5EGjPMN3x653yQ8sIS8FVFHQp8g
 		<rect x="119" y="51" fill-rule="evenodd" clip-rule="evenodd" fill="#ddd" width="10" height="9"/>
 	</g>
 	<g>
-		<rect x="119" y="52" fill-rule="evenodd" clip-rule="evenodd" fill="rgb(2, 168, 243)" width="10" height="9"/>
+		<rect x="119" y="52" fill-rule="evenodd" clip-rule="evenodd" fill="#fff" width="10" height="9"/>
 	</g>
 </g>
 <g>
