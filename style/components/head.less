@@ -5,9 +5,12 @@
 	border-bottom-left-radius: 6px;
 	padding: 0px;
 	background-color: rgba(255,255,255,.6);
-	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
-	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	// -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	// -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	// box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+	webkit-box-shadow: 0px 5px 45px -15px rgba(0,0,0,0.5) !important;
+	-moz-box-shadow: 0px 5px 45px -15px rgba(0,0,0,0.5) !important;
+	box-shadow: 0px 5px 45px -15px rgba(0,0,0,0.5) !important;
 	width: 100%;
 	height: 55px;
 	position: fixed;
@@ -50,19 +53,33 @@
 		.sign {
 			a {
 				margin-left: 31%;
-				width: 38%;
-				text-align: center;
-				color: #333;
-				transition: all 0.3s;
-				font-size: 10px;
+				color: white;
+				transition: 0.3s;
+				font-size: 14px;
 				font-weight: bold;
-				background-color: rgba(255,255,255,.6);
+				background-color: @color-default;
 				border-radius: 4px;
-				box-shadow: 1px 1px 5px rgba(0,0,0,.2);
-				padding: 6px 17px;
-				padding-top: 10px;
+				-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				padding: 6px 30px;
+				padding-left: 20px;
+				&:after {
+					transition: all 0.3s;
+					color: white;
+					top: -1px;
+					right: -10px;
+					font-size: 8px;
+					display: inline-block;
+					position: relative;
+					z-index: 1;
+					content: "❯";
+				}
 				&:hover {
-					box-shadow: none;
+					color: white;
+					&:after {
+						right: -15px;
+					}
 				}
 			}
 		}
@@ -143,7 +160,7 @@
 					transition: all 0.3s;
 					font-size: 10px;
 					font-weight: bold;
-					background-color: rgba(0,0,0,.1);
+					background-color: #ddd;
 					border-radius: 4px;
 					-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5) !important;
 					-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5) !important;
@@ -161,11 +178,10 @@
 				right: 0;
 				a {
 					position: absolute;
-					right: 25px;
+					right: 20px;
 					top: 0;
-					width: 90px;
+					width: 100px;
 					font-size: 10px;
-					padding: 6px 17px;
 				}
 			}
 		}
