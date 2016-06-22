@@ -6,83 +6,31 @@
 	</div>
 	<div class="col-xs-12 info-home">
 		<div class="col-md-12 Info-slide Slide carousel" data-interval="false">
-				<ol class="carousel-indicators">
-					<li data-target=".Info-slide" data-slide-to="0" class="active"></li>
-					<li data-target=".Info-slide" data-slide-to="1"></li>
-					<li data-target=".Info-slide" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="item active">
-						<div class="carousel-caption">
-							<div class="col-xs-12 block">
-								<div class="col-xs-12 info-home-block animated bounceInRight">
-									<div class="col-xs-12 text-presentation">
-										<h3>in brief about :</h3>
-										<hr/>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod recusandae minus, perspiciatis eius cupiditate qui, consectetur id rerum consequuntur iusto repellat laborum ipsam nostrum eaque quidem deleniti ab consequatur, harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi consequatur, sequi, ratione voluptatem, hic qui saepe necessitatibus quo dolorem quasi ad ut totam voluptates quas impedit aliquid sint quibusdam facilis.</p>
-									</div>
-									<!-- <div class="col-md-12 video-company">
-										video or image company heare	
-									</div> -->
-									<div class="col-xs-12 dop-content">
-										<div class="col-xs-12 col-md-4 info-small-item">
-											<div class="col-xs-12 dop-content-img"></div>
-											<div class="col-xs-12">
-												<h5>Example name</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repellat, tempora voluptates harum doloribus numquam, est facere suscipit, cumque eum <a href="#">similique odit</a> officiis minus! Maxime voluptatem cum non, tempora vitae.</p>
-											</div>
-										</div>
-										<div class="col-xs-12 col-md-4 info-small-item">
-											<div class="col-xs-12 dop-content-img"></div>
-											<div class="col-xs-12">
-												<h5>Example name</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repellat, tempora voluptates harum doloribus numquam, est facere suscipit, cumque eum similique odit <a href="#">officiis minus!</a> Maxime voluptatem cum non, tempora vitae.</p>
-											</div>
-										</div>
-										<div class="col-xs-12 col-md-4 info-small-item">
-											<div class="col-xs-12 dop-content-img"></div>
-											<div class="col-xs-12">
-												<h5>Example name</h5>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis repellat, tempora voluptates harum doloribus numquam, est facere suscipit, cumque eum similique odit officiis minus! <a href="#">Maxime voluptatem</a> cum non, tempora vitae.</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 clients">
-										<div class="col-xs-12">
-											<h5>Clients or sponsors:</h5>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sequi perferendis fuga temporibus nemo sunt odit quo, natus assumenda rem reiciendis, iste dignissimos repellat inventore quas eos maxime modi provident.</p>
-										</div>
-										<ul>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-											<li class="col-xs-6 col-sm-4 col-md-2"><a href="#"></a></li>
-										</ul>
-									</div>
-									<div class="col-xs-12 author">
-										<span>29.13.2000</span>
-										<img src="./../images/copyright.png"/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="carousel-caption">
-							<% include ./../components/_about-me %>
-						</div>
-					</div>
-					<div class="item">
-						<div class="carousel-caption">
-							
-						</div>
+			<ol class="carousel-indicators">
+				<li data-target=".Info-slide" data-slide-to="0" class="active"></li>
+				<li data-target=".Info-slide" data-slide-to="1"></li>
+				<li data-target=".Info-slide" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="carousel-caption">
+						<% include ./../components/_brief-about %>
 					</div>
 				</div>
-				<a class="right carousel-control" href=".Info-slide" role="button" data-slide="next">
-					<span aria-hidden="true"><img class="animated fadeInRight infinite" src="./images/right.svg" /></span>
-				</a>
+				<div class="item">
+					<div class="carousel-caption">
+						<% include ./../components/_about-me %>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel-caption">
+						<% include ./../components/_about-us %>
+					</div>
+				</div>
 			</div>
+			<a class="right carousel-control" href=".Info-slide" role="button" data-slide="next">
+				<span aria-hidden="true"><img class="animated fadeInRight infinite" src="./images/right.svg" /></span>
+			</a>
+		</div>
 	</div>
 </section>

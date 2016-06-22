@@ -1,0 +1,36 @@
+<section>
+	<div class="col-xs-12 block-mesage">
+		<img src="./../images/icons/portfolio/portfolio-blue.svg" alt="" />
+		<h5>Want to see our portfolio ?</h5>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+	</div>
+	<div class="col-xs-12 portfolio">
+		<div class="col-md-12 Portfolio-slide Slide carousel" data-interval="false">
+			<ol class="carousel-indicators">
+				<li data-target=".Portfolio-slide" data-slide-to="0" class="active"></li>
+				<li data-target=".Portfolio-slide" data-slide-to="1"></li>
+				<li data-target=".Portfolio-slide" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="carousel-caption">
+						<% include ./../components/_portfolio-item-small %>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel-caption">
+						<% include ./../components/_portfolio-item-medium %>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel-caption">
+						<% include ./../components/_portfolio-item-big %>
+					</div>
+				</div>
+			</div>
+			<a class="right carousel-control" href=".Portfolio-slide" role="button" data-slide="next">
+				<span aria-hidden="true"><img class="animated fadeInRight infinite" src="./images/right.svg" /></span>
+			</a>
+		</div>
+	</div>
+</section>
