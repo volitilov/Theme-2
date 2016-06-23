@@ -4,28 +4,27 @@
 			<img src="./../images/icons/people.svg" alt="" />
 			<h5>Our staff ?</h5>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			<a href="blog">staff</a>
 		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-2 staff-item">
-			<a href="#"><!-- image heare --></a>
+		<div class="col-md-12 Staff-slide Slide carousel" data-interval="false">
+			<ol class="carousel-indicators">
+				<li data-target=".Staff-slide" data-slide-to="0" class="active"></li>
+				<li data-target=".Staff-slide" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="carousel-caption">
+						<% include ./../components/_staff-item-1 %>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel-caption">
+						
+					</div>
+				</div>
+			</div>
+			<a class="right carousel-control" href=".Staff-slide" role="button" data-slide="next">
+				<span aria-hidden="true"><img class="animated fadeInRight infinite" src="./images/right.svg" /></span>
+			</a>
 		</div>
 	</div>
-	<svg fill="rgba(2, 168, 243, .1)" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-		<path d="M0 0 L50 50 L100 0 Z" />
-	</svg>
 </section>

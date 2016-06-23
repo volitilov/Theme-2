@@ -1,0 +1,99 @@
+.pricess-item-1 {
+	width: 74%;
+	left: 50%;
+	margin-left: -37%;
+	background-color: rgba(255,255,255,.6);
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	border-radius: 6px;
+	padding: 30px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	min-height: 580px;
+	margin-bottom: 100px;
+	color: #333;
+	ul {
+		padding: 0px;
+		list-style: none;
+		.item {
+			padding: 50px;
+			text-align: center;
+			.head-item {
+				img {
+					width: 15%;
+				}
+				h4 {
+					color: #333;
+				}
+				h5 {
+					font-size: 13px;
+					color: rgba(0,0,0,.3);
+					border-bottom: 1px solid #ddd;
+					padding-bottom: 10px;
+				}
+			}
+			.body-item {
+				.price {
+					border-bottom: 1px solid #ddd;
+					padding-bottom: 20px;
+					h1 {
+						color: rgb(2, 168, 243);
+					}
+					p {
+						color: rgba(0,0,0,.4);
+					}
+				}
+				.description {
+					border-bottom: 1px solid #ddd;
+					padding-top: 20px;
+					padding-bottom: 20px;
+					margin-bottom: 20px;
+					text-align: left;
+					ul {
+						list-style: disc;
+						li {
+							padding-top: 3px;
+							padding-bottom: 3px;
+						}
+					}
+				}
+			}
+			button {
+				color: white;
+				transition: 0.3s;
+				font-size: 14px;
+				font-weight: bold;
+				background-color: @color-default;
+				border: none;
+				border-radius: 4px;
+				-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				padding: 10px 25px;
+				padding-left: 20px;
+				&:after {
+					transition: all 0.3s;
+					color: white;
+					top: -2px;
+					right: -10px;
+					font-size: 9px;
+					display: inline-block;
+					position: relative;
+					z-index: 1;
+					content: "❯";
+				}
+				&:hover {
+					cursor: pointer;
+					&:after {
+						right: -15px;
+					}
+				}
+			}
+		}
+		.x {
+			border: 3px solid rgb(2, 168, 243);
+			border-radius: 6px;
+		}
+	}
+}
