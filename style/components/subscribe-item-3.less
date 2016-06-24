@@ -1,0 +1,111 @@
+.subscribe-item-3 {
+	width: 74%;
+	left: 50%;
+	margin-left: -37%;
+	background-color: rgba(255,255,255,.6);
+	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+	border-radius: 6px;
+	padding: 30px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 200px;
+	padding-right: 200px;
+	min-height: 580px;
+	margin-bottom: 100px;
+	color: #333;
+	h1 {
+		color: rgb(2, 168, 243);
+	}
+	p {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	.social {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		a {
+			transition: all 0.3s;
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			border: 3px solid rgb(2, 168, 243);
+			border-radius: 50%;
+			padding-top: 9px;
+			margin: 5px;
+			text-align: center;
+			&:hover {
+				border: 3px solid #333;
+				i {
+					color: #333;
+				}
+			}
+		}
+		i {
+			transition: all 0.3s;
+			font-size: 13px;
+			color: rgb(2, 168, 243);
+		}
+	}
+	form {
+		width: 100%;
+		display: inline-block;
+		fieldset {
+			border: none !important;
+		}
+		input {
+			text-align: center;
+			color: #333;
+			transition: 0.3s;
+			background-color: transparent !important;
+			width: 60%;
+			height: 40px;
+			border-radius: 25px;
+			border: 3px solid rgb(2, 168, 243);
+			&:focus {
+				width: 70%;
+				border-radius: 4px;
+				-webkit-appearance: caps-lock-indicator;
+				outline: none;
+			}
+		}
+		input::-webkit-input-placeholder,
+		textarea::-webkit-input-placeholder {
+			color: rgb(2, 168, 243);
+		}
+		button {
+			margin-top: 20px;
+			color: white;
+			transition: 0.3s;
+			font-size: 14px;
+			font-weight: bold;
+			background-color: @color-default;
+			border-radius: 4px;
+			-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+			padding: 10px 25px;
+			padding-left: 20px;
+			border: none;
+			&:after {
+				transition: all 0.3s;
+				color: white;
+				top: -2px;
+				right: -10px;
+				font-size: 9px;
+				display: inline-block;
+				position: relative;
+				z-index: 1;
+				content: "❯";
+			}
+			&:hover {
+				cursor: pointer;
+				&:after {
+					right: -15px;
+				}
+			}
+		}
+	}
+}
