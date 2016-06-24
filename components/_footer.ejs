@@ -1,63 +1,44 @@
 <section>
-	<footer class="col-xs-12">
+	<footer class="col-xs-12" id="contacts">
 		<% include ./../components/_menu-contacts %>
 		<div class="col-xs-12 footer-body">
-			<div class="col-xs-12 col-md-7 site-map">
-				<h5>Site map:</h5>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="info">Info</a></li>
-					<li><a href="portfolio">Portfolio</a></li>
-					<li><a href="services">Services</a></li>
-				</ul>
-				<ul>
-					<li><a href="shop">Shop</a></li>
-					<li><a href="blog">Blog</a></li>
-					<li><a href="contact">Contacts</a></li>
-					<li><a href="#">Sitemap</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Product</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="signup">Sign up</a></li>
-				</ul>
-				<ul>
-					<li><a href="#">Press kit</a></li>
-					<li><a href="#">Investors</a></li>
-					<li><a href="#">For press</a></li>
-					<li><a href="#">Partnership</a></li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-5 shop-locator text-right">
-				<h5>We accept all popular payment methods:</h5>
-				<ul>
-					<li><i class="fa fa-cc-amex"></i></li>
-					<li><i class="fa fa-cc-mastercard"></i></li>
-				</ul>
-				<ul>
-					<li><i class="fa fa-cc-diners-club"></i></li>
-					<li><i class="fa fa-cc-paypal"></i></li>
-				</ul>
-				<ul>
-					<li><i class="fa fa-cc-jcb"></i></li>
-					<li><i class="fa fa-cc-visa"></i></li>
-				</ul>
-				<ul>
-					<li><i class="fa fa-cc-discover"></i></li>
-					<li><i class="fa fa-cc-stripe"></i></li>
-				</ul>
-			</div>
+			<form method="POST">
+				<fieldset>
+					<group>
+						<label>
+							<input class="alert" type="text" name="name" placeholder="name *" requred />
+							<legend>name</legend>
+						</label>
+						<label>
+							<input class="alert" type="text" name="email" placeholder="@ email address *" requred />
+							<legend>email</legend>
+						</label>
+					</group>
+				</fieldset>
+				<fieldset>
+					<label>
+						<textarea class="alert" name="text" rows="4" placeholder="text heare..." requred ></textarea>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label>
+						<button type="submit">submit</button>
+					</label>
+				</fieldset>
+			</form>
 		</div>
 		<div class="col-xs-12 bottom-text">
-			<div class="col-xs-12 col-md-7 copyright">
-				<p>© 2016  All rights reserved. Design and development by <a href="#">volitilov</a></p>
-			</div>
-			<div class="col-xs-12 col-md-5 dop-info-footer">
-				<a class="ac-gf" href="#" title="Language"><img src="./../images/flag_large.png"/>Россия</a>
-				<a href="#">Terms & Conditions</a>
-				<a href="#">Privacy policy</a>
-			</div>
+			<p>© 2016  All rights reserved. Design and development by <a href="#">volitilov</a></p>
+			<ul class="text-right">
+				<li><i class="fa fa-cc-amex"></i></li>
+				<li><i class="fa fa-cc-mastercard"></i></li>
+				<li><i class="fa fa-cc-diners-club"></i></li>
+				<li><i class="fa fa-cc-paypal"></i></li>
+				<li><i class="fa fa-cc-jcb"></i></li>
+				<li><i class="fa fa-cc-visa"></i></li>
+				<li><i class="fa fa-cc-discover"></i></li>
+				<li><i class="fa fa-cc-stripe"></i></li>
+			</ul>
 		</div>  
 	</footer>
 </section>

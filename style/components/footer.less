@@ -5,79 +5,96 @@ footer {
 	padding: 0px !important;
 	font-size: 12px;
 	background: @color-default;
-	h5 {
-		color: black
-	}
 	.footer-body {
-		z-index: 1;
+		text-align: center;
+		z-index: 99;
 		-webkit-box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
 		box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
 		background-color: @color-default;
 		margin-top: -5px;
 		padding: 50px;
-		padding-left: 20px;
-		padding-right: 20px;
-		.site-map {
-			padding-left: 12%;
-			h5 {
-				font-size: 13px;
-				color: black;
-				margin-bottom: 20px;
-			}
-			ul {
-				padding: 0px;
-				width: 42%;
-				margin-right: 7%;
-				list-style: none;
-				display: inline-block;
-				li {
-					padding-top: 6px;
-					padding-bottom: 6px;
-					a {
-						font-size: 12px;
-						font-weight: bold;
-						color: #333;
-						&:after {
-							transition: all 0.3s;
-							color: #333;
-							top: -1px;
-							right: -10px;
-							font-size: 10px;
-							display: inline-block;
-							position: relative;
-							z-index: 1;
-							content: "❯";
-						}
-						&:hover {
-							color: black;
-							&:after {
-								color: black;
-								right: -15px;
-							}
-						}
-					}
-				} 
-			}
-		}
-		.shop-locator {
+		form {
+			position: relative;
+			left: 50%;
+			margin-left: -37%;
+			width: 74%;
+			background-color: rgb(2, 168, 243);
+			-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+			border-radius: 6px;
+			padding: 0px;
 			padding-top: 20px;
-			text-align: center;
-			h5 {
-				font-size: 10px;
-				color: black;
-				margin-bottom: 10px;
+			padding-bottom: 50px;
+			fieldset {
+				border: none !important;
 			}
-			i {
+			input {
 				color: #333;
-				font-size: 25px;
+				transition: 0.3s;
+				background-color: transparent !important;
+				padding-left: 20px;
+				width: 25%;
+				height: 40px;
+				margin-right: 10px;
+				border-radius: 25px;
+				border: 3px solid #333;
+				&:focus {
+					border-radius: 6px;
+					border: 3px solid @color-default;
+					-webkit-appearance: caps-lock-indicator;
+					outline: none;
+				}
 			}
-			ul {
-				padding: 0px;
-				display: inline-block;
-				list-style: none;
-				li {
-					padding-left: 5px;
+			textarea {
+				color: #333;
+				transition: 0.3s;
+				background-color: transparent !important;
+				margin-top: 10px;
+				margin-left: -5px;
+				padding-left: 20px;
+				padding-top: 20px;
+				width: 51%;
+				border-radius: 10px;
+				height: 200px;
+				border: 3px solid #333;
+				&:focus {
+					border-radius: 6px;
+					border: 3px solid @color-default;
+					-webkit-appearance: caps-lock-indicator;
+					outline: none;
+				}	
+			}
+			input::-webkit-input-placeholder,
+			textarea::-webkit-input-placeholder {
+				color: #333;
+			}
+			input::-webkit-outer-spin-button,
+			input::-webkit-inner-spin-button {
+				-webkit-appearance: none;
+				margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+			}
+			legend {
+				display: none;
+			}
+			button {
+				margin-top: 10px;
+				border: none;
+				color: rgb(2, 168, 243);
+				transition: 0.3s;
+				font-size: 14px;
+				font-weight: bold;
+				background-color: #333;
+				border-radius: 4px;
+				-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+				padding: 10px 30px;
+				&:hover {
+					cursor: pointer;
+					box-shadow: none;
 				}
 			}
 		}
@@ -91,18 +108,18 @@ footer {
 		margin-top: -5px;
 		padding: 15px;
 		padding-top: 20px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 185px;
+		padding-right: 185px;
 		a {
 			font-size: 10px;
 			font-weight: bold;
 			padding: 0px !important;
 			padding-right: 15px !important;
 			margin-right: 15px;
-			color: @color-default;
+			color: rgb(2, 168, 243);
 			&:after {
 				transition: all 0.3s;
-				color: @color-default;
+				color: rgb(2, 168, 243);
 				top: -2px;
 				right: -7px;
 				font-size: 5px;
@@ -118,36 +135,24 @@ footer {
 				}
 			}
 		}
-		.copyright {
-			text-align: center;
-			display: inline;
-			padding: 0px;
-			padding-bottom: 20px;
+		p {
+			font-size: 10px;
+			color: rgba(255, 255, 255, .4);
 			a {
-				padding-left: 10px !important;
-			}
-			p {
-				font-size: 10px;
-				color: rgba(255, 255, 255, .4);
-				padding-right: 15px;
-				margin-right: 10px;
+				margin-left: 5px;
 			}
 		}
-		.dop-info-footer {
+		ul {
+			margin-top: -25px;
 			padding: 0px;
-			padding-bottom: 25px;
-			text-align: center;
-			a {
-
-			}
-		}
-		.ac-gf {
-			position: absolute;
-			bottom: 0;
-			margin-top: -2px;
-			padding-right: 0px !important;
-			img {
-				margin-right: 5px;
+			list-style: none;
+			li {
+				padding: 0px;
+				display: inline-block;
+				i {
+					color: grey;
+					font-size: 17px;
+				}
 			}
 		}
 	}
@@ -156,79 +161,14 @@ footer {
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
 	footer {
-		.footer-logo {
-			img {
-				width: 120px;
-			}
-		}
-		.footer-body {
-			.site-map {
-				ul {
-					width: 20%;
-					margin-right: 2%;
-				}
-			}
-			.shop-locator {
-				h5 {
-					font-size: 13px;
-					margin-bottom: 30px;
-				}
-				i {
-					font-size: 55px;
-				}
-			}
-		}
-		.bottom-text {
-			padding-bottom: 10px;
-			.ac-gf {
-				position: relative;
-			}
-		}
+		
 	}
 }
 
 ///////////////////////////////////////////////////	laptop and dekstop devices
 @media  (min-width : 996px) {
 	footer {
-		.footer-logo {
-			img {
-				width: 130px;
-			}
-		}
-		.footer-body {
-			padding: 80px;
-			padding-left: 8%;
-			padding-right: 2%;
-			.site-map {
-				padding: 0px;
-				
-			}
-			.shop-locator {
-				padding-top: 0px;
-				ul {
-					margin-top: 0px;
-				}
-			}
-		}
-		.bottom-text {
-			padding: 20px;
-			margin-top: 0px;
-			padding-left: 7%;
-			padding-right: 7%;
-			.copyright {
-				text-align: left;
-				padding: 0px;
-			}
-			.dop-info-footer {
-				padding: 0px;
-				a {
-					float: right;
-				}
-			}
-			.ac-gf {
-				float: right;
-			}
-		}
+		
 	}
 }
 
