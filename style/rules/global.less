@@ -18,3 +18,68 @@
 @color-7: rgb(167, 252, 0);
 @color-8: rgb(127, 255, 0);
 @color-9: rgb(124, 77, 255);
+
+///////////////////////////////////////	main
+main {
+	&:before {
+		content: '';
+		width: 155px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 2;
+		background-color: rgba(0,0,0,.1);
+	}
+	&:after {
+		content: '';
+		width: 155px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+		background-color: rgba(0,0,0,.1);
+	}
+}
+///////////////////////////////////////	changes slide and carusel
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.Slide {
+	padding: 0px;
+	display: block;
+	.carousel-inner {
+		padding: 0px;
+		width: 100%;
+		min-height: 900px;
+		.carousel-caption {
+			width: 100%;
+		}
+	}
+}
+.carousel-control {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 120px;
+	z-index: 100;
+}
+.carousel-control.right {
+	padding-top: 390px !important;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	img {
+		width: 20%;
+	}
+}
+.carousel-control.left {
+	padding-top: 390px !important;
+	img {
+		width: 20%;
+	}
+}
