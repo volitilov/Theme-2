@@ -19,12 +19,13 @@
 @color-8: rgb(127, 255, 0);
 @color-9: rgb(124, 77, 255);
 
-///////////////////////////////////////	body
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////	body
 body {
 	margin: 0;
 	line-height: 1;
 	// background: #f7f7f7;
-	background: #eaeaea url("./../../images/bg.png") repeat !important;
+	background: #eaeaea url("/images/bg.png") repeat !important;
 	// font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a {
@@ -39,7 +40,9 @@ a {
 	}
 }
 
-/////////////////////////////////////// block
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////						   block
+/////////////////////////////////////// 	  default mobile devices
 .block {
 	margin-top: -1px;
 	border-radius: 6px;
@@ -47,42 +50,76 @@ a {
 	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
 	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
-	&:before {
-		content: '';
-		width: 155px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 11;
-		background-color: rgba(0,0,0,.1);
-	}
-	&:after {
-		content: '';
-		width: 155px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		z-index: 11;
-		background-color: rgba(0,0,0,.1);
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.block {
+		margin-top: -1px;
+		border-radius: 6px;
+		padding: 0px;
+		-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+		box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
+		&:before {
+			content: '';
+			width: 155px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 11;
+			background-color: rgba(0,0,0,.1);
+		}
+		&:after {
+			content: '';
+			width: 155px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 11;
+			background-color: rgba(0,0,0,.1);
+		}
 	}
 }
-///////////////////////////////////////	card
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////							card
+/////////////////////////////////////// 	  default mobile devices
 .card {
-	width: 74%;
+	width: 98%;
 	left: 50%;
-	margin-left: -37%;
-	margin-top: 80px;
-	margin-bottom: 100px;
+	margin-left: -49%;
+	margin-top: 60px;
+	margin-bottom: 0.5%;
 	background-color: rgba(255,255,255,.6);
-	-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5) !important;
-	-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5) !important;
-	box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5) !important;
+	 box-shadow: 0px 0px 2px 1px rgba(0,0,0,.1);
 	border-radius: 6px;
 	padding: 30px;
 }
-///////////////////////////////////////	changes slide and carusel
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.card {
+		width: 99%;
+		margin-left: -49.5%;
+	}
+}
+
+///////////////////////////////////////////////////	laptop and dekstop devices
+@media  (min-width : 981px) {
+	
+}
+
+
+////////////////////////////////////////////////////////////////////
+///////////////////////////////////////			   slide and carusel
+/////////////////////////////////////// 	  default mobile devices
 .carousel,
 .item,
 .active {
@@ -105,20 +142,38 @@ a {
 	z-index: 99;
 }
 .carousel-control.right {
-	top: 0;
 	right: 0;
 	bottom: 0;
-	padding-top: 390px;
+	padding-bottom: 35px !important;
 	img {
 		width: 20%;
 	}
 }
 .carousel-control.left {
-	top: 0;
 	left: 0;
 	bottom: 0;
-	padding-top: 390px !important;
+	padding-bottom: 35px !important;
 	img {
 		width: 20%;
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.carousel-control.right {
+		top: 0;
+		right: 0;
+		padding-top: 350px !important;
+		img {
+			width: 20%;
+		}
+	}
+	.carousel-control.left {
+		top: 0;
+		left: 0;
+		bottom: 0;
+		padding-top: 350px !important;
+		img {
+			width: 20%;
+		}
 	}
 }

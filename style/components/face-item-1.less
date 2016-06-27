@@ -1,11 +1,12 @@
 ///////////////////////////////////////	default mobile devices
 .face-item-1 {
-	padding-top: 100px;
+	padding-top: 40px;
 	padding-bottom: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	h4 {
 		margin-top: 50px;
+		color: rgb(2, 168, 243);
 		text-transform: uppercase;
 	}
 	p {
@@ -15,11 +16,11 @@
 		padding-top: 20px;
 		.main-images {
 			img {
-				width: 80%;
+				width: 100%;
 			}
 		}
 		.mouse {
-			margin-top: 100px;
+			margin-top: 50px;
 		}
 	}
 }
@@ -27,14 +28,37 @@
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
 	.face-item-1 {
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-top: 80px;
+		padding-left: 165px;
+		padding-right: 165px;
+		.big-logo-sites {
+			.main-images {
+				img {
+					width: 100%;
+				}
+			}
+			.mouse {
+				margin-top: 80px;
+			}
+		}
 	}
 }
 
 ///////////////////////////////////////////////////	laptop devices
 @media  (min-width : 996px) {
-	// not required
+	.face-item-1 {
+		padding-top: 100px;
+		.big-logo-sites {
+			.main-images {
+				img {
+					width: 60%;
+				}
+			}
+			.mouse {
+				margin-top: 140px;
+			}
+		}
+	}
 }
 
 ///////////////////////////////////////////////////	dekstop devices
