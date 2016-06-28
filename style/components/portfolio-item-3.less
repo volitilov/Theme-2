@@ -1,10 +1,14 @@
+////////////////////////////////////////	defaul mobile devices
 .portfolio-item-3 {
+	padding-bottom: 85px;
 	.ex-portfolio {
 		transition: all 0.3s;
+		left: 50%;
+		margin-left: -150px;
 		display: block;
 		padding: 0px;
-		width: 100%;
-		height: 550px;
+		width: 300px;
+		min-height: 230px;
 		border-radius: 4px;
 		border: 3px solid transparent;
 		background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjYwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2NjAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NjAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2NjAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yNTguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjU4LjE4NHogTTM5MC4yNDQsMjQ0LjI0N0gyNzAuNDM3di04OC40OTRoMTE5LjgwOEwzOTAuMjQ0LDI0NC4yNDcNCgkJTDM5MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI3Ni44ODEsMjM0LjcxNyAzMDEuNTcyLDIwOC43NjQgMzEwLjgyNCwyMTIuNzY4IDM0MC4wMTYsMTgxLjY4OCAzNTEuNTA1LDE5NS40MzQgDQoJCTM1Ni42ODksMTkyLjMwMyAzODQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjMwNS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K");
@@ -27,7 +31,7 @@
 		}
 		img {
 			width: 100%;
-			height: 550px;
+			height: 224px;
 		}
 		&:hover {
 			border: 3px solid transparent;
@@ -35,8 +39,54 @@
 				color: white;
 				background-color: @color-default-rgba-2;
 				box-shadow: 1px 1px 5px rgba(0,0,0,.2);
-				padding-top: 250px;
+				padding-top: 100px;
 			}
 		}
 	}
+}
+
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px)  {
+	.portfolio-item-3 {
+		padding-left: 55px;
+		padding-right: 55px;
+		padding-bottom: 35px;
+		.ex-portfolio {
+			width: 100%;
+			margin-left: -50%;
+			height: 400px;
+			img {
+				height: 400px;
+			}
+			&:hover {
+				&:before {
+					padding-top: 180px;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop devices
+@media  (min-width : 996px) {
+	.portfolio-item-3 {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		.ex-portfolio {
+			height: 550px;
+			img {
+				height: 550px;
+			}
+			&:hover {
+				&:before {
+					padding-top: 250px;
+				}
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////	dekstop devices
+@media  (min-width : 1200px) {
+	
 }
