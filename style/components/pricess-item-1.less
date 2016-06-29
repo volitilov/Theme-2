@@ -1,11 +1,12 @@
 .pricess-item-1 {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 10px;
+	padding-bottom: 0px;
 	ul {
 		padding: 0px;
 		list-style: none;
 		.item {
-			padding: 50px;
+			padding: 20px;
+			margin-bottom: 50px;
 			text-align: center;
 			.head-item {
 				img {
@@ -77,8 +78,38 @@
 			}
 		}
 		.x {
-			border: 3px solid rgb(2, 168, 243);
+			border: 2px solid rgb(2, 168, 243);
 			border-radius: 6px;
 		}
+	}
+}
+///////////////////////////////////////////////////	tablet devices
+@media  (min-width : 768px) {
+	.pricess-item-1 {
+		padding-left: 190px;
+		padding-right: 190px;
+		ul {
+			.item {
+				padding: 50px;
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////	laptop devices
+@media  (min-width : 996px) {
+	.pricess-item-1 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+///////////////////////////////////////////////////	dekstop devices
+@media  (min-width : 1200px) {
+	.pricess-item-1 {
+		padding-left: 30px;
+		padding-right: 30px;
 	}
 }
