@@ -5,26 +5,6 @@ footer {
 	padding: 0px !important;
 	font-size: 12px;
 	background: @color-default;
-	&:before {
-		content: '';
-		width: 155px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 11;
-		background-color: rgba(0,0,0,.1);
-	}
-	&:after {
-		content: '';
-		width: 155px;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		z-index: 11;
-		background-color: rgba(0,0,0,.1);
-	}
 	.footer-body {
 		text-align: center;
 		z-index: 99;
@@ -33,32 +13,14 @@ footer {
 		box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
 		background-color: @color-default;
 		margin-top: -5px;
-		padding: 50px;
-		&:before {
-			content: '';
-			width: 155px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			z-index: 11;
-			background-color: rgba(0,0,0,.1);
-		}
-		&:after {
-			content: '';
-			width: 155px;
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			z-index: 11;
-			background-color: rgba(0,0,0,.1);
-		}
+		padding: 0px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		form {
 			position: relative;
 			left: 50%;
-			margin-left: -37%;
-			width: 74%;
+			margin-left: -49%;
+			width: 98%;
 			-webkit-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
 			-moz-box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
 			box-shadow: 0px 22px 45px -15px rgba(0,0,0,0.5);
@@ -70,13 +32,14 @@ footer {
 				border: none !important;
 			}
 			input {
+				display: inline-block;
 				color: #333;
 				transition: 0.3s;
 				background-color: transparent !important;
 				padding-left: 20px;
-				width: 25%;
+				width: 80%;
 				height: 40px;
-				margin-right: 10px;
+				margin-bottom: 20px;
 				border-radius: 25px;
 				border: 3px solid #333;
 				&:focus {
@@ -90,11 +53,9 @@ footer {
 				color: #333;
 				transition: 0.3s;
 				background-color: transparent !important;
-				margin-top: 10px;
-				margin-left: -5px;
 				padding-left: 20px;
 				padding-top: 20px;
-				width: 51%;
+				width: 80%;
 				border-radius: 10px;
 				height: 200px;
 				border: 3px solid #333;
@@ -139,6 +100,7 @@ footer {
 		}
 	}
 	.bottom-text {
+		text-align: center;
 		z-index: 199;
 		-webkit-box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
 		-moz-box-shadow:0 -1px 4px rgba(0, 0, 0, 0.3);
@@ -148,8 +110,6 @@ footer {
 		margin-top: -5px;
 		padding: 15px;
 		padding-top: 20px;
-		padding-left: 215px;
-		padding-right: 215px;
 		a {
 			font-size: 10px;
 			font-weight: bold;
@@ -182,7 +142,7 @@ footer {
 			}
 		}
 		ul {
-			margin-top: -25px;
+			margin-top: 25px;
 			padding: 0px;
 			list-style: none;
 			li {
@@ -200,14 +160,94 @@ footer {
 ///////////////////////////////////////////////////	tablet devices
 @media  (min-width : 768px)  {
 	footer {
-		
+		&:before {
+			content: '';
+			width: 155px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 11;
+			background-color: rgba(0,0,0,.1);
+		}
+		&:after {
+			content: '';
+			width: 155px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 11;
+			background-color: rgba(0,0,0,.1);
+		}
+		.footer-body {
+			padding: 50px;
+			&:before {
+				content: '';
+				width: 155px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 11;
+				background-color: rgba(0,0,0,.1);
+			}
+			&:after {
+				content: '';
+				width: 155px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 11;
+				background-color: rgba(0,0,0,.1);
+			}
+			form {
+				margin-left: -37%;
+				width: 74%;
+				input {
+					width: 40%;
+					margin-right: 10px;
+					margin-bottom: 10px;
+				}
+				textarea {
+					margin-top: 10px;
+					margin-left: -5px;
+					width: 80%;
+				}
+			}
+		}
+		.bottom-text {
+			padding-left: 55px;
+			padding-right: 55px;
+			p {
+				text-align: left;
+			}
+			ul {
+				text-align: right;
+				margin-top: -25px;
+			}
+		}
 	}
 }
 
 ///////////////////////////////////////////////////	laptop and dekstop devices
 @media  (min-width : 996px) {
 	footer {
-		
+		.footer-body {
+			form {
+				input {
+					width: 25%;
+				}
+				textarea {
+					width: 51%;	
+				}
+			}
+		}
+		.bottom-text {
+			padding-left: 215px;
+			padding-right: 215px;
+		}
 	}
 }
 
