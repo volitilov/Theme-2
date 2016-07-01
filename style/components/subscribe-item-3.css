@@ -1,0 +1,115 @@
+.subscribe-item-3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.subscribe-item-3 h1 {
+  color: #02a8f3;
+}
+.subscribe-item-3 p {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.subscribe-item-3 .social {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.subscribe-item-3 .social a {
+  transition: all 0.3s;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #02a8f3;
+  border-radius: 50%;
+  padding-top: 9px;
+  margin: 5px;
+  text-align: center;
+}
+.subscribe-item-3 .social a:hover {
+  border-color: #333;
+}
+.subscribe-item-3 .social a:hover i {
+  color: #333;
+}
+.subscribe-item-3 .social i {
+  transition: all 0.3s;
+  font-size: 13px;
+  color: #02a8f3;
+}
+.subscribe-item-3 form {
+  width: 100%;
+  display: inline-block;
+}
+.subscribe-item-3 form fieldset {
+  border: none !important;
+}
+.subscribe-item-3 form input {
+  text-align: center;
+  color: #333;
+  transition: 0.3s;
+  background-color: transparent !important;
+  width: 80%;
+  height: 40px;
+  border-radius: 25px;
+  border: 3px solid #02a8f3;
+}
+.subscribe-item-3 form input:focus {
+  width: 90%;
+  border-radius: 4px;
+  -webkit-appearance: caps-lock-indicator;
+  outline: none;
+}
+.subscribe-item-3 form input::-webkit-input-placeholder,
+.subscribe-item-3 form textarea::-webkit-input-placeholder {
+  color: #02a8f3;
+}
+.subscribe-item-3 form button {
+  margin-top: 20px;
+  color: white;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #02a8f3;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  padding: 10px 25px;
+  padding-left: 20px;
+  border: none;
+}
+.subscribe-item-3 form button:after {
+  transition: all 0.3s;
+  color: white;
+  top: -2px;
+  right: -10px;
+  font-size: 9px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  content: "❯";
+}
+.subscribe-item-3 form button:hover {
+  cursor: pointer;
+}
+.subscribe-item-3 form button:hover:after {
+  right: -15px;
+}
+@media (min-width: 768px) {
+  .subscribe-item-3 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (min-width: 996px) {
+  form input {
+    width: 60%;
+  }
+  form input:focus {
+    width: 80%;
+  }
+}

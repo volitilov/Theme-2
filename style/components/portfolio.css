@@ -1,0 +1,17 @@
+.portfolio {
+  z-index: 8;
+}
+.portfolio .x2 {
+  margin-left: 60px;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 996px) {
+}
+@media (min-width: 1200px) {
+  .portfolio-small {
+    padding-left: 140px;
+    padding-right: 145px;
+    padding-bottom: 370px;
+  }
+}

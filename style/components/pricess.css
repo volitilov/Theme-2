@@ -1,0 +1,8 @@
+.pricess {
+  z-index: 6;
+}
+.pricess .x2 {
+  margin-left: 60px;
+}
+@media (min-width: 996px) {
+}

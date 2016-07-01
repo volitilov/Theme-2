@@ -1,0 +1,55 @@
+.services-item-1 {
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-bottom: 45px;
+}
+.services-item-1 .serv-ex-list {
+  padding: 0px;
+  margin-top: 20px;
+  text-align: left;
+}
+.services-item-1 .serv-ex-list h5 {
+  text-transform: uppercase;
+  color: #02a8f3;
+}
+.services-item-1 .serv-ex-list ul {
+  padding: 0px;
+  list-style: none;
+}
+.services-item-1 .serv-ex-list ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.services-item-1 .serv-ex-list ul a {
+  font-size: 20px;
+}
+.services-item-1 .serv-ex-list ul a:after {
+  transition: 0.3s;
+  color: #02a8f3;
+  top: -1px;
+  right: -7px;
+  font-size: 10px !important;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  content: "〉";
+}
+.services-item-1 .serv-ex-list ul a:hover:after {
+  right: -15px;
+}
+@media (min-width: 768px) {
+  .services-item-1 {
+    padding-left: 155px;
+  }
+}
+@media (min-width: 996px) {
+  .services-item-1 {
+    padding-left: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .services-item-1 {
+    padding-left: 100px;
+    padding-bottom: 60px;
+  }
+}

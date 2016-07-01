@@ -1,0 +1,8 @@
+.staff {
+  z-index: 5;
+}
+.staff .x2 {
+  margin-left: 60px;
+}
+@media (min-width: 996px) {
+}
